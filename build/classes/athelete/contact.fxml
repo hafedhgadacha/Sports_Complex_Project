@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="761.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="home_scene" focusTraversable="true" layoutX="10.0" layoutY="10.0" prefHeight="539.0" prefWidth="761.0" styleClass="white-bg" stylesheets="@../complexe_sportif/dashborderpane.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="186.0" fitWidth="197.0" layoutX="95.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/zna.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="202.0" fitWidth="162.0" layoutX="506.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/hfidho.jpg" />
+               </image>
+            </ImageView>
+            <Separator layoutX="362.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="539.0" prefWidth="34.0" />
+            <Text layoutX="189.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kouki " />
+            <Text layoutX="189.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mohamed Amine" />
+            <Text layoutX="112.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" />
+            <Text layoutX="114.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone" />
+            <Text layoutX="111.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prenom" />
+            <Text layoutX="188.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="**********" />
+            <Text layoutX="584.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gadacha" />
+            <Text layoutX="584.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hafedh" />
+            <Text layoutX="507.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" />
+            <Text layoutX="509.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone" />
+            <Text layoutX="506.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prenom" />
+            <Text layoutX="583.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="**********" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

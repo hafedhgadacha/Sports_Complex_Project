@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="complexe_sportif.FXMLController">
+   <left>
+      <Pane prefHeight="550.0" prefWidth="323.0" style=": ;" styleClass="left-pane" stylesheets="@newCascadeStyleSheet.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="174.0" fitWidth="175.0" layoutX="146.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/basketball_500204.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="147.0" fitWidth="135.0" layoutX="79.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/ball_2842557.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="99.0" fitWidth="122.0" layoutX="30.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/tennis_4630423.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+   </left>
+   <center>
+      <Pane prefHeight="550.0" prefWidth="561.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="name" layoutX="179.0" layoutY="222.0" promptText="Name" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px; -fx-border-color: #0592ea;">
+    <font>
+        <Font size="14.0" />
+    </font>
+</TextField>
+            <PasswordField fx:id="password" layoutX="177.0" layoutY="299.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0592ea; -fx-border-width: 0px 0px 2px;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="login" layoutX="216.0" layoutY="362.0" mnemonicParsing="false" onAction="#loginadmin" onKeyReleased="#login" prefHeight="39.0" prefWidth="96.0" styleClass="login" stylesheets="@newCascadeStyleSheet.css" text="Login">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="188.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../user_3237472.png" />
+               </image>
+            </ImageView>
+            <Hyperlink layoutX="401.0" layoutY="511.0" text="forget password?" textFill="#0a62d4" />
+
+            <FontAwesomeIcon fill="#0592ea" glyphName="USER" layoutX="155.0" layoutY="249.0" size="20" text="">
+               <font>
+                  <Font name="Calibri" size="87.0" />
+               </font>
+            </FontAwesomeIcon>
+            <FontAwesomeIcon fill="#0592ea" glyphName="LOCK" layoutX="156.0" layoutY="328.0" size="20" />
+            <Button fx:id="close" layoutX="500.0" layoutY="5.0" mnemonicParsing="false" onAction="#close" styleClass="close" stylesheets="@newCascadeStyleSheet.css" textFill="#0238dc">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon glyphName="CLOSE" text="" />
+               </graphic>
+            </Button>
+         </children></Pane>
+   </center>
+</BorderPane>

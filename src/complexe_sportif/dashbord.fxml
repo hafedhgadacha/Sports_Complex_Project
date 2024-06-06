@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@dashborderpane.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="complexe_sportif.DashbordController">
+   <children>
+      <AnchorPane prefHeight="610.0" prefWidth="974.0" styleClass="border-pane" stylesheets="@newCascadeStyleSheet.css">
+         <children>
+            <BorderPane fx:id="centre" layoutX="3.2" layoutY="1.6" prefHeight="609.6" prefWidth="1000.0" styleClass="border-pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="42.0" prefWidth="1000.0" styleClass="semi-top" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="-0.8" layoutY="0.8" prefHeight="33.0" prefWidth="1000.0" styleClass="top-form" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Button fx:id="close" layoutX="913.8000000000001" layoutY="4.8" mnemonicParsing="false" onAction="#close" prefHeight="24.0" prefWidth="42.0" styleClass="close" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="3.2">
+                                 <graphic>
+                                    <FontAwesomeIcon glyphName="CLOSE" size="1.2em" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="916.0" layoutY="4.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="36.0" styleClass="minimize-btn">
+                                 <graphic>
+                                    <FontAwesomeIcon glyphName="MINUS" onDragDetected="#moin" size="1.2em" styleClass="minimize-btn" />
+                                 </graphic>
+                              </Button>
+                              <ImageView fitHeight="28.0" fitWidth="30.0" layoutX="2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/football_1307763.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="36.0" layoutY="2.0" text="Complexe Sportif">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane prefHeight="561.0" prefWidth="184.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="4.0" prefHeight="560.8" prefWidth="192.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <FontAwesomeIcon fill="#0e47a9" glyphName="USER" layoutX="67.0" layoutY="79.0" size="7em" />
+                              <Label layoutX="80.0" layoutY="91.0" text="welcome" textFill="WHITE" />
+                              <Label layoutX="86.0" layoutY="109.0" textFill="WHITE" />
+                              <Line endX="90.99998474121094" endY="-1.52587890625E-5" layoutX="100.0" layoutY="136.0" startX="-91.69999694824219" startY="-1.52587890625E-5" strokeMiterLimit="9.6" />
+                           </children>
+                        </AnchorPane>
+                        <Button fx:id="logout" layoutX="54.0" layoutY="517.0" mnemonicParsing="false" onAction="#logout" prefHeight="34.0" prefWidth="92.0" text="LogOut" textAlignment="CENTER" textFill="#2e3951" textOverrun="CENTER_ELLIPSIS">
+                           <graphic>
+                              <FontAwesomeIcon glyphName="SIGN_OUT" size="2em" wrappingWidth="23.885720133781433">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </FontAwesomeIcon>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="logout" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                           <font>
+                              <Font name="Franklin Gothic Heavy" size="12.0" />
+                           </font>
+                        </Button>
+                        <VBox fx:id="sidebare" layoutX="3.2" layoutY="136.8" prefHeight="367.0" prefWidth="199.0" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="137.0">
+                           <children>
+                              <Button fx:id="home" mnemonicParsing="false" onAction="#home" prefHeight="46.0" prefWidth="198.0" styleClass="nav-btn" text="Home" />
+                              <Button fx:id="equipement" mnemonicParsing="false" onAction="#equipement" prefHeight="41.0" prefWidth="198.0" styleClass="nav-btn" text="equipement" />
+                              <Button fx:id="Match" mnemonicParsing="false" onAction="#Match" prefHeight="42.0" prefWidth="198.0" styleClass="nav-btn" text="Matches" />
+                              <Button fx:id="athletes" mnemonicParsing="false" onAction="#athletes" prefHeight="42.0" prefWidth="198.0" styleClass="nav-btn" text="athletes" />
+                              <Button fx:id="Arbitre" mnemonicParsing="false" onAction="#Arbitre" prefHeight="41.0" prefWidth="198.0" styleClass="nav-btn" text="Arbitres" />
+                              <Button fx:id="Cantact" mnemonicParsing="false" onAction="#Cantact" prefHeight="46.0" prefWidth="198.0" styleClass="nav-btn" text="Cantact" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="nav" />
+                        <String fx:value="shadow" />
+                        <String fx:value="nav-border" />
+                     </styleClass>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="560.0" prefWidth="806.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane fx:id="athelte_scene" prefHeight="560.0" prefWidth="806.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

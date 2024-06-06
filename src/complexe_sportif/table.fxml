@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="complexe_sportif.TableController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="560.0" prefWidth="806.0">
+         <children>
+            <TabPane fx:id="tabPane" prefHeight="560.0" prefWidth="805.0" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-14.0" AnchorPane.topAnchor="0.0">
+               <tabs>
+                  <Tab text="equipe">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="531.0" prefWidth="828.0" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+                           </padding>
+                           <children>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="529.0" prefWidth="788.0" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css">
+                                 <children>
+                                    <BorderPane layoutX="24.8" layoutY="21.6" prefHeight="498.0" prefWidth="798.0" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="-24.0" AnchorPane.topAnchor="17.0">
+                                       <top>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="852.0" spacing="10.0" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <Label graphicTextGap="10.0" text="Voici la liste des medicins" textFill="#5e5c5c">
+                                                   <font>
+                                                      <Font name="Arial Bold" size="12.0" />
+                                                   </font>
+                                                   <padding>
+                                                      <Insets left="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <Button fx:id="btnAddMedicin1" mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" styleClass="button2" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css" text="Ajouter nouveau medicin" textFill="#52438f">
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </Button>
+                                                <Button fx:id="btnExportMedicin1" mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" styleClass="button2" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css" text="Export list medicins" textFill="#52438f" />
+                                                <ImageView fx:id="imgRefresh21" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/icons/reload.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </HBox>
+                                       </top>
+                                       <center>
+                                          <TableView fx:id="tableMedicin1" prefHeight="431.0" prefWidth="790.0" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css" BorderPane.alignment="CENTER">
+                                             <columns>
+                                                <TableColumn id="id" fx:id="idMedicin1" prefWidth="42.399964928627014" text="ID" />
+                                                <TableColumn fx:id="nomMedicin1" prefWidth="64.00001525878906" text="Nom" />
+                                                <TableColumn fx:id="prenomMedicin1" minWidth="0.0" prefWidth="72.79998779296875" text="Prenom" />
+                                                <TableColumn fx:id="telephone1" minWidth="0.0" prefWidth="91.20001220703125" text="Telephone" />
+                                                <TableColumn fx:id="dateNaissMedicin1" minWidth="0.0" prefWidth="106.4000244140625" text="DateNaissance" />
+                                                <TableColumn fx:id="genderMedicin1" prefWidth="75.0" text="Gender" />
+                                                <TableColumn fx:id="emailMedicin1" minWidth="0.0" prefWidth="144.0" text="Email" />
+                                                <TableColumn fx:id="specialiteMed1" minWidth="0.0" prefWidth="99.2000732421875" text="Specialite" />
+                                                <TableColumn fx:id="clinique11" minWidth="0.0" prefWidth="97.333251953125" text="Clinique" />
+                                                <TableColumn fx:id="editColMed1" minWidth="0.0" prefWidth="226.40004882812502" text="Action" />
+                                             </columns>
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                          </TableView>
+                                       </center>
+                                    </BorderPane>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+                                 </padding>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="reservation">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="529.0" prefWidth="788.0" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css">
+                           <children>
+                              <BorderPane layoutX="13.600000000000001" layoutY="25.0" prefHeight="456.0" prefWidth="810.0" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="12.0">
+                                 <top>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="852.0" spacing="10.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <Label graphicTextGap="10.0" text="Voici la liste des medicins" textFill="#5e5c5c">
+                                             <font>
+                                                <Font name="Arial Bold" size="12.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="10.0" />
+                                             </padding>
+                                          </Label>
+                                          <Button fx:id="btnAddMedicin" mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" styleClass="button2" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css" text="Ajouter nouveau medicin" textFill="#52438f">
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </Button>
+                                          <Button fx:id="btnExportMedicin" mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" styleClass="button2" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css" text="Export list medicins" textFill="#52438f" />
+                                          <ImageView fx:id="imgRefresh2" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/icons/reload.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                 </top>
+                                 <center>
+                                    <TableView fx:id="tableMedicin" prefHeight="431.0" prefWidth="790.0" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css" BorderPane.alignment="CENTER">
+                                       <columns>
+                                          <TableColumn id="id" fx:id="idMedicin" prefWidth="42.399964928627014" text="ID" />
+                                          <TableColumn fx:id="nomMedicin" prefWidth="64.00001525878906" text="Nom" />
+                                          <TableColumn fx:id="prenomMedicin" minWidth="0.0" prefWidth="72.79998779296875" text="Prenom" />
+                                          <TableColumn fx:id="telephone" minWidth="0.0" prefWidth="91.20001220703125" text="Telephone" />
+                                          <TableColumn fx:id="dateNaissMedicin" minWidth="0.0" prefWidth="106.4000244140625" text="DateNaissance" />
+                                          <TableColumn fx:id="genderMedicin" prefWidth="75.0" text="Gender" />
+                                          <TableColumn fx:id="emailMedicin" minWidth="0.0" prefWidth="144.0" text="Email" />
+                                          <TableColumn fx:id="specialiteMed" minWidth="0.0" prefWidth="99.2000732421875" text="Specialite" />
+                                          <TableColumn fx:id="clinique1" minWidth="0.0" prefWidth="97.333251953125" text="Clinique" />
+                                          <TableColumn fx:id="editColMed" minWidth="0.0" prefWidth="226.40004882812502" text="Action" />
+                                       </columns>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </TableView>
+                                 </center>
+                              </BorderPane>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+                           </padding>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="competition">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="376.0" prefWidth="516.0" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css">
+                           <children>
+                              <BorderPane prefHeight="488.0" prefWidth="770.0" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <top>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="53.0" prefWidth="696.0" spacing="10.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <Label graphicTextGap="10.0" text="Voici la liste des cliniques" textFill="#5e5c5c">
+                                             <font>
+                                                <Font name="Arial Bold" size="12.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="10.0" />
+                                             </padding>
+                                          </Label>
+                                          <Button fx:id="btnAddCli" mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" styleClass="button2" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css" text="Ajouter nouveau clinique" textFill="#52438f">
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </Button>
+                                          <Button fx:id="btnExportCli" mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" styleClass="button2" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css" text="Export list cliniques" textFill="#52438f" />
+                                          <ImageView fx:id="imgRefresh3" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/icons/reload.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                 </top>
+                                 <center>
+                                    <TableView fx:id="tableClinique" prefHeight="428.0" prefWidth="730.0" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css" BorderPane.alignment="CENTER">
+                                       <columns>
+                                          <TableColumn id="id" fx:id="idClinique" prefWidth="42.399964928627014" text="ID" />
+                                          <TableColumn fx:id="nomClinique" prefWidth="86.13330841064453" text="Nom" />
+                                          <TableColumn fx:id="adrClinique" minWidth="0.0" prefWidth="102.666748046875" text="Adresse" />
+                                          <TableColumn fx:id="telClinique" minWidth="0.0" prefWidth="94.66665649414062" text="Telephone" />
+                                          <TableColumn fx:id="emailClinique" minWidth="0.0" prefWidth="121.3333740234375" text="Email" />
+                                          <TableColumn fx:id="villeClinique" minWidth="0.0" prefWidth="89.066650390625" text="Ville" />
+                                          <TableColumn fx:id="prix_chClinique" minWidth="0.0" prefWidth="126.1334228515625" text="Prix_chambre(DT)" />
+                                          <TableColumn fx:id="editColCli" minWidth="0.0" prefWidth="279.9999633789063" text="Action" />
+                                       </columns>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </TableView>
+                                 </center>
+                              </BorderPane>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+                           </padding>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="planning">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="376.0" prefWidth="516.0">
+                           <children>
+                              <BorderPane prefHeight="488.0" prefWidth="770.0" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <top>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="53.0" prefWidth="696.0" spacing="10.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <Label graphicTextGap="10.0" text="Voici la liste des patients" textFill="#5e5c5c">
+                                             <font>
+                                                <Font name="Arial Bold" size="12.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="10.0" />
+                                             </padding>
+                                          </Label>
+                                          <Button fx:id="btnAddPat" mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" styleClass="button2" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css" text="Ajouter nouveau patient" textFill="#52438f">
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </Button>
+                                          <Button fx:id="btnExportPat" mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" styleClass="button2" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css" text="Export list patients" textFill="#52438f" />
+                                          <ImageView fx:id="imgRefresh4" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/icons/reload.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                 </top>
+                                 <center>
+                                    <TableView fx:id="tablePatient" prefHeight="428.0" prefWidth="730.0" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css" BorderPane.alignment="CENTER">
+                                       <columns>
+                                          <TableColumn id="id" fx:id="idPatient" prefWidth="42.399964928627014" text="ID" />
+                                          <TableColumn fx:id="nomPatient" prefWidth="86.13330841064453" text="Nom" />
+                                          <TableColumn fx:id="prenomPatient" minWidth="0.0" prefWidth="102.666748046875" text="Prenom" />
+                                          <TableColumn fx:id="dateNaiss" minWidth="0.0" prefWidth="126.1334228515625" text="Date de Naissance" />
+                                          <TableColumn fx:id="emailPatient" minWidth="0.0" prefWidth="119.199951171875" text="Email" />
+                                          <TableColumn fx:id="gender" minWidth="0.0" prefWidth="120.0" text="Sexe" />
+                                          <TableColumn fx:id="nationalite" minWidth="0.0" prefWidth="121.5999755859375" text="Nationalite" />
+                                          <TableColumn fx:id="editColPat" minWidth="0.0" prefWidth="225.60006103515627" text="Action" />
+                                       </columns>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <BorderPane.margin>
+                                          <Insets left="10.0" />
+                                       </BorderPane.margin>
+                                    </TableView>
+                                 </center>
+                              </BorderPane>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" right="10.0" />
+                           </padding>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="match">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="376.0" prefWidth="516.0" />
+                     </content>
+                  </Tab>
+                  <Tab text="athelte">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="376.0" prefWidth="516.0">
+                           <children>
+                              <BorderPane prefHeight="488.0" prefWidth="770.0" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <top>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="53.0" prefWidth="696.0" spacing="10.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <Label graphicTextGap="10.0" text="Voici la liste des hotels" textFill="#5e5c5c">
+                                             <font>
+                                                <Font name="Arial Bold" size="12.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="10.0" />
+                                             </padding>
+                                          </Label>
+                                          <Button fx:id="btnAddHotel" mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" styleClass="button2" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css" text="Ajouter nouveau hotel" textFill="#52438f">
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </Button>
+                                          <Button fx:id="btnExportHotel" mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" styleClass="button2" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css" text="Export list hotels" textFill="#52438f" />
+                                          <ImageView fx:id="imgRefresh6" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/icons/reload.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                 </top>
+                                 <center>
+                                    <TableView fx:id="tableHotel" prefHeight="428.0" prefWidth="730.0" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css" BorderPane.alignment="CENTER">
+                                       <columns>
+                                          <TableColumn id="id" fx:id="idHotel" prefWidth="42.399964928627014" text="ID" />
+                                          <TableColumn fx:id="nomHotel" prefWidth="86.13330841064453" text="Nom" />
+                                          <TableColumn fx:id="adrHotel" minWidth="0.0" prefWidth="73.60003662109375" text="Adresse" />
+                                          <TableColumn fx:id="telHotel" minWidth="0.0" prefWidth="91.199951171875" text="Telephone" />
+                                          <TableColumn fx:id="emailHotel" minWidth="0.0" prefWidth="113.33334350585938" text="Email" />
+                                          <TableColumn fx:id="villeHotel" prefWidth="85.86663818359375" text="Ville" />
+                                          <TableColumn fx:id="catHotel" minWidth="0.0" prefWidth="111.20004272460938" text="Categorie" />
+                                          <TableColumn fx:id="prix_chHotel" minWidth="0.0" prefWidth="139.199951171875" text="Prix_chambre(DT)" />
+                                          <TableColumn fx:id="editColHotel" minWidth="0.0" prefWidth="220.00003662109373" text="Action" />
+                                       </columns>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </TableView>
+                                 </center>
+                              </BorderPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="caisse">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="376.0" prefWidth="516.0">
+                           <children>
+                              <BorderPane prefHeight="488.0" prefWidth="770.0" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+                                 <top>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="53.0" prefWidth="696.0" spacing="10.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <Label graphicTextGap="10.0" text="Voici la liste des appartments" textFill="#5e5c5c">
+                                             <font>
+                                                <Font name="Arial Bold" size="12.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="10.0" />
+                                             </padding>
+                                          </Label>
+                                          <Button fx:id="btnAddAppartment" mnemonicParsing="false" prefHeight="26.0" prefWidth="177.0" styleClass="button2" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css" text="Ajouter nouveau appartment" textFill="#52438f">
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </Button>
+                                          <Button fx:id="btnExportAppartment" mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" styleClass="button2" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css" text="Export list hotels" textFill="#52438f" />
+                                          <ImageView fx:id="imgRefresh7" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/icons/reload.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                 </top>
+                                 <center>
+                                    <TableView fx:id="tableAppartment" prefHeight="428.0" prefWidth="730.0" stylesheets="@../../../Gestion_Tourisme_medicale-Enicar/src/main/resources/com/example/tourisme_medicale/css/style.css" BorderPane.alignment="CENTER">
+                                       <columns>
+                                          <TableColumn id="id" fx:id="idAppartment" prefWidth="42.399964928627014" text="ID" />
+                                          <TableColumn fx:id="nomAppartment" prefWidth="86.13330841064453" text="Nom" />
+                                          <TableColumn fx:id="adrAppartment" minWidth="0.0" prefWidth="73.60003662109375" text="Adresse" />
+                                          <TableColumn fx:id="nbChambreAppartment" minWidth="0.0" prefWidth="121.06674194335938" text="nbre des chambres" />
+                                          <TableColumn fx:id="villeAppartment" prefWidth="118.13330078125" text="Ville" />
+                                          <TableColumn fx:id="prix_chAppartment" minWidth="0.0" prefWidth="140.2667236328125" text="Prix_chambre(DT)" />
+                                          <TableColumn fx:id="videAppartment" minWidth="0.0" prefWidth="90.66671752929688" text="Vide" />
+                                          <TableColumn fx:id="editColAppartment" minWidth="0.0" prefWidth="269.6" text="Action" />
+                                       </columns>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </TableView>
+                                 </center>
+                              </BorderPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

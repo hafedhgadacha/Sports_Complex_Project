@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="417.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tennis.Modifier_atheleteController">
+   <children>
+      <Pane prefHeight="70.0" prefWidth="486.0" style="-fx-background-color: #52438f;">
+         <children>
+            <Label layoutX="169.0" layoutY="24.0" text="ajouter joueur" textFill="#f7f7f7">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane layoutX="42.0" layoutY="68.0" prefHeight="337.0" prefWidth="486.0" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="68.0">
+         <styleClass>
+            <String fx:value="shadow" />
+            <String fx:value="white-bg" />
+         </styleClass>
+         <children>
+            <TextField fx:id="get_id_jouer" layoutX="211.0" layoutY="53.0">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="textfield" />
+               </styleClass>
+            </TextField>
+            <TextField fx:id="get_nom_jouer" layoutX="211.0" layoutY="89.0">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="textfield" />
+               </styleClass>
+            </TextField>
+            <Label layoutX="125.0" layoutY="93.0" text="nom" />
+            <TextField fx:id="get_prenom_jouer" layoutX="211.0" layoutY="125.0">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="textfield" />
+               </styleClass>
+            </TextField>
+            <Label layoutX="125.0" layoutY="134.0" text="prenom" />
+            <TextField fx:id="get_age_jouer" layoutX="211.0" layoutY="167.0">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="textfield" />
+               </styleClass>
+            </TextField>
+            <TextField fx:id="get_nom_equipe_jouer" layoutX="211.0" layoutY="203.0">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="textfield" />
+               </styleClass>
+            </TextField>
+            <Label layoutX="126.0" layoutY="171.0" text="age" />
+            <Label layoutX="125.0" layoutY="207.0" text="nom-equipe" />
+            <Label layoutX="125.0" layoutY="56.0" text="id" />
+            <Button fx:id="annuler" layoutX="269.0" layoutY="267.0" mnemonicParsing="false" onAction="#annuler" prefHeight="34.0" prefWidth="122.0" style="-fx-background-color: red;" styleClass="close" stylesheets="@../complexe_sportif/newCascadeStyleSheet.css" text="Annuler" textFill="WHITE" />
+            <Button fx:id="btn_ajouter" layoutX="95.0" layoutY="267.0" mnemonicParsing="false" onAction="#btn_ajouter" prefHeight="34.0" prefWidth="122.0" text="ajouter" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="245.0" stylesheets="@../complexe_sportif/dashborderpane.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="athelete.minitableau">
+   <children>
+      <BorderPane prefHeight="568.0" prefWidth="244.0">
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="244.0" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#btn_ajouter" prefHeight="26.0" prefWidth="106.0" stylesheets="@../complexe_sportif/newCascadeStyleSheet.css" text="ajouter" textFill="WHITE">
+                     <styleClass>
+                        <String fx:value="nav_btn_add" />
+                        <String fx:value="shadow" />
+                     </styleClass></Button>
+                  <TextField fx:id="chercher" onAction="#chercher" prefHeight="26.0" prefWidth="110.0" promptText="Chercher">
+                     <styleClass>
+                        <String fx:value="textfield" />
+                        <String fx:value="shadow" />
+                     </styleClass></TextField>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <TableView fx:id="tableView" prefHeight="514.0" prefWidth="237.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <columns>
+                  <TableColumn fx:id="nom" prefWidth="67.19998168945312" text="Nom" />
+                  <TableColumn fx:id="prenom" prefWidth="67.19998168945312" text="Prenom" />
+                  <TableColumn fx:id="nom_equipe" prefWidth="110.4000244140625" text="Nom Equipe" />
+               </columns>
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="white-bg" />
+               </styleClass>
+            </TableView>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

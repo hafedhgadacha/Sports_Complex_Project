@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="364.0" prefWidth="486.0" stylesheets="@../complexe_sportif/dashborderpane.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="equipement.ajouter_equipementstock">
+   <children>
+      <Pane prefHeight="70.0" prefWidth="486.0" style="-fx-background-color: #52438f;">
+         <children>
+            <Label layoutX="107.0" layoutY="24.0" text="ajouter equipement dans le stock" textFill="#f7f7f7">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane layoutX="42.0" layoutY="68.0" prefHeight="295.0" prefWidth="486.0" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="68.0">
+         <styleClass>
+            <String fx:value="shadow" />
+            <String fx:value="white-bg" />
+         </styleClass>
+         <children>
+            <TextField fx:id="get_typeMateriel" layoutX="229.0" layoutY="87.0">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="textfield" />
+               </styleClass>
+            </TextField>
+            <TextField fx:id="get_nbrEnStock" layoutX="229.0" layoutY="129.0">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="textfield" />
+               </styleClass>
+            </TextField>
+            <Label layoutX="115.0" layoutY="135.0" styleClass="shadow" text="nombre en stock" />
+            <TextField fx:id="get_prix" layoutX="229.0" layoutY="171.0">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="textfield" />
+               </styleClass>
+            </TextField>
+            <Label layoutX="116.0" layoutY="172.0" styleClass="shadow" text="prix" />
+            <Label layoutX="115.0" layoutY="87.0" styleClass="shadow" text="Type Materiel" />
+            <Button fx:id="annuler" layoutX="287.0" layoutY="232.0" mnemonicParsing="false" onAction="#annuler" prefHeight="34.0" prefWidth="122.0" style="-fx-background-color: red;" styleClass="shadow" stylesheets="@../complexe_sportif/newCascadeStyleSheet.css" text="Annuler" textFill="WHITE" />
+            <Button fx:id="btn_ajouterstock" layoutX="106.0" layoutY="229.0" mnemonicParsing="false" onAction="#btn_ajouterstock" prefHeight="34.0" prefWidth="122.0" text="ajouter" textFill="WHITE">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="nav_btn_add" />
+               </styleClass></Button>
+            <TextField fx:id="get_equipement_id" layoutX="229.0" layoutY="44.0">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="textfield" />
+               </styleClass></TextField>
+            <Text layoutX="117.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="shadow" text="equipement id" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

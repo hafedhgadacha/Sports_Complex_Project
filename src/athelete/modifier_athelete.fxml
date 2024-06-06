@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="574.0" prefWidth="486.0" stylesheets="@../complexe_sportif/dashborderpane.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="athelete.Modifier_atheleteController">
+
+    <children>
+        <Pane prefHeight="70.0" prefWidth="486.0" style="-fx-background-color: #52438f;">
+            <children>
+                <Label layoutX="121.0" layoutY="24.0" text="Modification joueur" textFill="#f7f7f7">
+                    <font>
+                        <Font name="Calibri" size="20.0" />
+                    </font>
+                </Label>
+            </children></Pane>
+      <AnchorPane layoutX="42.0" layoutY="68.0" prefHeight="509.0" prefWidth="486.0" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="68.0">
+         <styleClass>
+            <String fx:value="shadow" />
+            <String fx:value="white-bg" />
+         </styleClass>
+         <children>
+            <TextField fx:id="get_id_jouer" layoutX="213.0" layoutY="49.0">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="textfield" />
+               </styleClass>
+            </TextField>
+            <Label layoutX="120.0" layoutY="234.0" styleClass="shadow" text="num mailoot" />
+            <TextField fx:id="get_nom_jouer" layoutX="213.0" layoutY="85.0">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="textfield" />
+               </styleClass>
+            </TextField>
+            <Label layoutX="120.0" layoutY="89.0" styleClass="shadow" text="nom" />
+            <TextField fx:id="get_prenom_jouer" layoutX="213.0" layoutY="121.0">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="textfield" />
+               </styleClass>
+            </TextField>
+            <TextField fx:id="get_num_mailoot_jouer" layoutX="213.0" layoutY="230.0">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="textfield" />
+               </styleClass>
+            </TextField>
+            <Label layoutX="119.0" layoutY="130.0" styleClass="shadow" text="prenom" />
+            <Label layoutX="119.0" layoutY="161.0" styleClass="shadow" text="filiere" />
+            <Label layoutX="120.0" layoutY="194.0" styleClass="shadow" text="poste" />
+            <TextField fx:id="get_age_jouer" layoutX="213.0" layoutY="269.0">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="textfield" />
+               </styleClass>
+            </TextField>
+            <TextField fx:id="get_nom_equipe_jouer" layoutX="213.0" layoutY="305.0">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="textfield" />
+               </styleClass>
+            </TextField>
+            <Label layoutX="120.0" layoutY="273.0" styleClass="shadow" text="age" />
+            <Label layoutX="120.0" layoutY="309.0" styleClass="shadow" text="nom-equipe" />
+            <Label layoutX="121.0" layoutY="52.0" styleClass="shadow" text="id" />
+            <ComboBox fx:id="get_fililer_jouer" layoutX="213.0" layoutY="157.0" prefWidth="150.0" promptText="choix">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="nav-btn" />
+               </styleClass></ComboBox>
+            <ComboBox fx:id="get_poste_jouer" layoutX="213.0" layoutY="190.0" prefWidth="150.0" promptText="choix">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="nav-btn" />
+               </styleClass></ComboBox>
+            <ComboBox fx:id="get_capitaine_jouer" layoutX="212.0" layoutY="343.0" prefWidth="150.0" promptText="choix">
+               <styleClass>
+                  <String fx:value="nav-btn" />
+                  <String fx:value="shadow" />
+               </styleClass></ComboBox>
+            <Label layoutX="120.0" layoutY="347.0" styleClass="shadow" text="capitaine" />
+              <Button fx:id="btn_annuler_modif_jouer" layoutX="269.0" layoutY="425.0" mnemonicParsing="false" onAction="#annuler" prefHeight="34.0" prefWidth="122.0" style="-fx-background-color: red;" styleClass="close-btn" text="Annuler" textFill="WHITE" />
+              <Button fx:id="btn_modifier" layoutX="95.0" layoutY="425.0" mnemonicParsing="false" onAction="#btn_modifier" prefHeight="34.0" prefWidth="122.0" styleClass="nav_btn_add" text="Modifier" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+    </children>
+
+</AnchorPane>

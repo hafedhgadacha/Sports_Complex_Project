@@ -1,0 +1,121 @@
+.border-pane{
+    -fx-border-color:#000;
+    -fx-border-width: .4px;
+    
+}
+.top-form{
+    -fx-background-color:#fff;
+    -fx-border-color:#000;
+    -fx-border-width: .4px .4px .8px .4px;
+}
+.semi-top{
+    
+    -fx-background-color:#ddd;
+    -fx-border-color:#000;
+    -fx-border-width: .4px .4px .4px .4px;
+}.close-btn {
+    -fx-background-color: red;
+    -fx-cursor: hand;
+    -fx-font-weight: bold; /* Set font weight to bold */
+    -fx-font-size: 14px;   /* Set font size to 14 pixels */
+}
+
+.close-btn:hover {
+    -fx-background-color: darkred; /* Change background color on hover */
+}
+
+.minimize-btn{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+}
+.minimize-btn:hover{
+    -fx-background-color:#ddd;
+}
+.nav{
+        -fx-background-color:linear-gradient(to bottom right ,#000099 , #2DCDFD);
+        -fx-borde-color:#000;
+        -fx-border-width:0px .2px .4px .4px;
+        
+}
+.nav-border{
+    -fx-border-color: #000;
+    -fx-border-width:0px .2px .4px .4px;
+}
+.nav-btn{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+    -fx-text-fill:#000;
+    -fx-text-border-width:.6px;
+    -fx-font-family:arial;
+    
+}
+.nav-btn:hover{
+        -fx-background-color:#fff;
+        -fx-text-fill:#000;
+}
+.logout{
+    -fx-background-color:#1fb2ec;
+    -fx-cursor:hand;
+    -fx-background-raduis:50px;
+    -fx-padding:5px;
+}
+.logout:hover{
+    -fx-background-color:#0e47a9;
+}
+.shadow{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5),8,0,0,0);
+}
+.white-bg{
+    -fx-background-color:#fff;
+    -fx-background-raduis:6px;
+    -fx-border-radius: 20px;
+        -fx-border-width:33px;
+
+}
+.deleteButton{
+    -fx-cursor:hand;
+    -fx-background-raduis:50px;
+    -fx-padding:5px;
+    -fx-background-color:red;
+    
+
+}
+.deleteButton:hover{
+        -fx-background-color:brown;
+
+}
+.textfield{
+    -fx-background-color: #fff;
+    -fx-background-radius: 4px;
+    -fx-border-color: linear-gradient(to bottom right ,#000099 , #2DCDFD);
+    -fx-border-radius: 4px;
+    -fx-border-width:.5px;
+    -fx-font-family:Tahoma; 
+}
+.textfield:focused{
+    -fx-background-color: #fff;
+    -fx-border-width:1px;
+}
+.nav_btn_add{
+     -fx-background-color:linear-gradient(to bottom right ,#000099 , #2DCDFD);
+        -fx-borde-color:#000;
+        -fx-border-width:0px .2px .4px .4px;
+            -fx-cursor:hand;
+ 
+    
+}
+.nav_btn_add:hover{
+        -fx-background-color:#0e47a9;
+        
+}
+.nav_btn_add1{
+     -fx-background-color:linear-gradient(to bottom right ,#000099 , #2DCDFD);
+        -fx-borde-color:#000;
+        -fx-border-width:0px .2px .4px .4px;
+            -fx-cursor:hand;
+ 
+    
+}
+.nav_btn_add1:hover{
+        -fx-background-color:#fff;
+}

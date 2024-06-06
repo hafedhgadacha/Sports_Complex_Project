@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tennis.Tableau_atheletheController">
+   <children>
+      <BorderPane layoutX="41.0" layoutY="15.0" prefHeight="518.0" prefWidth="731.0">
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="53.0" prefWidth="696.0" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label graphicTextGap="10.0" prefHeight="15.0" prefWidth="420.0" text="La liste des joueurs" textFill="#5e5c5c">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="chercher" onAction="#chercher" promptText="Chercher" />
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <TableView fx:id="tableView" prefHeight="465.0" prefWidth="919.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <columns>
+                  <TableColumn fx:id="id" prefWidth="137.5999755859375" text="ID" />
+                  <TableColumn fx:id="nom" prefWidth="74.4000244140625" text="Nom" />
+                  <TableColumn fx:id="prenom" prefWidth="132.79998779296875" text="Prenom" />
+                  <TableColumn fx:id="age" prefWidth="124.0" text="Age" />
+                  <TableColumn fx:id="nom_equipe" prefWidth="260.79997558593755" text="Nom Equipe" />
+               </columns>
+            </TableView>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

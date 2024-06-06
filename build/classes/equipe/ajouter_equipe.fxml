@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="536.0" prefWidth="383.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tourisme_medicale.ChambreCliniqueController">
+
+    <children>
+        <Pane layoutY="-3.0" prefHeight="74.0" prefWidth="402.0" style="-fx-background-color: #52438f;">
+            <children>
+                <Label layoutX="156.0" layoutY="24.0" prefHeight="23.0" prefWidth="106.0" text="Ajout equipe" textFill="#f7f7f7">
+                    <font>
+                        <Font name="Calibri" size="20.0" />
+                    </font>
+                </Label>
+            </children></Pane>
+      <AnchorPane layoutX="39.0" layoutY="70.4" prefHeight="466.0" prefWidth="402.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+         <styleClass>
+            <String fx:value="shadow" />
+            <String fx:value="white-bg" />
+         </styleClass>
+         <children>
+            <TextField layoutX="142.0" layoutY="87.0">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="textfield" />
+               </styleClass>
+            </TextField>
+            <Label layoutX="67.0" layoutY="91.0" text="nom" />
+            <TextField layoutX="152.0" layoutY="201.0">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="textfield" />
+               </styleClass>
+            </TextField>
+            <Label layoutX="61.0" layoutY="130.0" text="athelete" />
+            <Label layoutX="60.0" layoutY="163.0" text="abonnement" />
+            <Label layoutX="84.0" layoutY="205.0" text="prix" />
+            <TextField layoutX="152.0" layoutY="258.0">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="textfield" />
+               </styleClass>
+            </TextField>
+            <Label layoutX="78.0" layoutY="262.0" text="remise" />
+            <Label layoutX="63.0" layoutY="311.0" text="eqyuipement" />
+            <Button fx:id="btnAddCh" layoutX="154.0" layoutY="117.0" mnemonicParsing="false" onAction="#save" prefHeight="34.0" prefWidth="122.0" stylesheets="@../../css/style.css" text="ajouter" textFill="WHITE" />
+            <Button fx:id="btnAddCh1" layoutX="249.0" layoutY="405.0" mnemonicParsing="false" onAction="#save" prefHeight="34.0" prefWidth="122.0" stylesheets="@../../css/style.css" text="ajouter" textFill="WHITE" />
+            <Button fx:id="btnAddCh2" layoutX="161.0" layoutY="159.0" mnemonicParsing="false" onAction="#save" prefHeight="23.0" prefWidth="57.0" stylesheets="@../../css/style.css" text="oui" textFill="WHITE" />
+            <Button fx:id="btnAddCh21" layoutX="241.0" layoutY="157.0" mnemonicParsing="false" onAction="#save" prefHeight="23.0" prefWidth="57.0" stylesheets="@../../css/style.css" text="non" textFill="WHITE" />
+            <Button fx:id="btnAddCh3" layoutX="165.0" layoutY="302.0" mnemonicParsing="false" onAction="#save" prefHeight="34.0" prefWidth="122.0" stylesheets="@../../css/style.css" text="ajouter" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+    </children>
+
+</AnchorPane>

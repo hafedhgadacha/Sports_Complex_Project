@@ -1,0 +1,29 @@
+
+.button:hover:not(.hasText) {
+    -fx-background-color: #fff;
+        -fx-opacity: 2;
+
+}
+
+.button{
+     -fx-cursor:hand;
+    -fx-opacity: 0.2;
+
+}
+
+.button:hover{
+        -fx-background-color:white;
+                -fx-opacity: 0.5;
+
+} 
+
+ 
+.backfoot{
+    -fx-background-image: url("football.png");
+}
+.backbask{
+    -fx-background-image: url("Basketball.jpg")
+}
+.backten{
+    -fx-background-image: url("tennis.jpg")
+} 

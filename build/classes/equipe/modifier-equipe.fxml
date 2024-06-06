@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="574.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tourisme_medicale.ChambreCliniqueController">
+
+    <children>
+        <Pane prefHeight="70.0" prefWidth="486.0" style="-fx-background-color: #52438f;">
+            <children>
+                <Label layoutX="121.0" layoutY="24.0" text="Modification joueur" textFill="#f7f7f7">
+                    <font>
+                        <Font name="Calibri" size="20.0" />
+                    </font>
+                </Label>
+            </children></Pane>
+      <AnchorPane layoutX="42.0" layoutY="68.0" prefHeight="509.0" prefWidth="486.0" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="68.0">
+         <styleClass>
+            <String fx:value="shadow" />
+            <String fx:value="white-bg" />
+         </styleClass>
+         <children>
+              <Button fx:id="btnAdd1" layoutX="241.0" layoutY="417.0" mnemonicParsing="false" onAction="#save" prefHeight="34.0" prefWidth="122.0" style="-fx-background-color: red;" stylesheets="@../../css/style.css" text="Annuler" textFill="WHITE" />
+              <Button fx:id="btnAddCh" layoutX="84.0" layoutY="414.0" mnemonicParsing="false" onAction="#save" prefHeight="34.0" prefWidth="122.0" stylesheets="@../../css/style.css" text="Modifier" textFill="WHITE" />
+            <TextField layoutX="191.0" layoutY="77.0">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="textfield" />
+               </styleClass>
+            </TextField>
+            <Label layoutX="70.0" layoutY="81.0" text="nom" />
+            <TextField layoutX="201.0" layoutY="191.0">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="textfield" />
+               </styleClass>
+            </TextField>
+            <Label layoutX="61.0" layoutY="119.0" text="athelete" />
+            <Label layoutX="50.0" layoutY="153.0" text="abonnement" />
+            <Label layoutX="74.0" layoutY="195.0" text="prix" />
+            <TextField layoutX="201.0" layoutY="248.0">
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="textfield" />
+               </styleClass>
+            </TextField>
+            <Label layoutX="65.0" layoutY="252.0" text="remise" />
+            <Label layoutX="48.0" layoutY="301.0" text="eqyuipement" />
+            <Button fx:id="btnAddCh1" layoutX="145.0" layoutY="110.0" mnemonicParsing="false" onAction="#save" prefHeight="34.0" prefWidth="85.0" stylesheets="@../../css/style.css" text="ajouter" textFill="WHITE" />
+            <Button fx:id="btnAddCh2" layoutX="185.0" layoutY="149.0" mnemonicParsing="false" onAction="#save" prefHeight="23.0" prefWidth="57.0" stylesheets="@../../css/style.css" text="oui" textFill="WHITE" />
+            <Button fx:id="btnAddCh21" layoutX="302.0" layoutY="149.0" mnemonicParsing="false" onAction="#save" prefHeight="23.0" prefWidth="57.0" stylesheets="@../../css/style.css" text="non" textFill="WHITE" />
+            <Button fx:id="btnAddCh3" layoutX="152.0" layoutY="292.0" mnemonicParsing="false" onAction="#save" prefHeight="34.0" prefWidth="102.0" stylesheets="@../../css/style.css" text="ajouter" textFill="WHITE" />
+            <Button fx:id="btnAddCh4" layoutX="259.0" layoutY="110.0" mnemonicParsing="false" onAction="#save" prefHeight="34.0" prefWidth="86.0" stylesheets="@../../css/style.css" text="Modifier" textFill="WHITE" />
+            <Button fx:id="btnAddCh5" layoutX="267.0" layoutY="292.0" mnemonicParsing="false" onAction="#save" prefHeight="34.0" prefWidth="101.0" stylesheets="@../../css/style.css" text="Modifier" textFill="WHITE" />
+            <Button fx:id="btnAdd12" layoutX="382.0" layoutY="292.0" mnemonicParsing="false" onAction="#save" prefHeight="34.0" prefWidth="78.0" style="-fx-background-color: red;" stylesheets="@../../css/style.css" text="supprimer" textFill="WHITE" />
+            <Button fx:id="btnAdd11" layoutX="378.0" layoutY="107.0" mnemonicParsing="false" onAction="#save" prefHeight="34.0" prefWidth="70.0" style="-fx-background-color: red;" stylesheets="@../../css/style.css" text="suprimer" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+    </children>
+
+</AnchorPane>
